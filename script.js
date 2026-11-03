@@ -1,4 +1,4 @@
-const CHANNEL_URL = "PASTE_YOUR_YOUTUBE_CHANNEL_URL_HERE";
+const CHANNEL_URL = "https://www.youtube.com/@ch_aayan_07";
 
 const verifyScreen=document.getElementById("verifyScreen");
 const appsScreen=document.getElementById("appsScreen");
