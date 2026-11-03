@@ -35,15 +35,22 @@ APPS.forEach((app,i)=>updateCounter(app,i));
 }
 
 async function updateCounter(app,index){
-const el=document.getElementById(`counter-${index}`);
-if(!el)return;
-if(!app.releaseApi){el.textContent="Downloads: counter not configured";return;}
-try{
-const r=await fetch(app.releaseApi,{cache:"no-store"});
-if(!r.ok)throw new Error();
-const d=await r.json();
-el.textContent=`Downloads: ${Number(d.download_count||0).toLocaleString()}`;
-}catch{el.textContent="Downloads: unavailable";}
+  const el=document.getElementById(`counter-${index}`);
+  if(!el)return;
+  if(!app.releaseApi){
+    el.textContent="Downloads: counter not configured";
+    return;
+  }
+  try{
+    const r=await fetch(app.releaseApi,{cache:"no-store"});
+    if(!r.ok)throw new Error("API error");
+    const d=await r.json();
+    const asset=d.assets?.find(a=>a.name.toLowerCase().endsWith(".apk"));
+    if(!asset)throw new Error("APK not found");
+    el.textContent=`Downloads: ${Number(asset.download_count||0).toLocaleString()}`;
+  }catch(e){
+    el.textContent="Downloads: unavailable";
+  }
 }
 setInterval(()=>APPS.forEach((a,i)=>updateCounter(a,i)),60000);
 
