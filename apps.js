@@ -23,7 +23,7 @@ const APPS = [
     size: "",
     description: "Car Dealership Game",
     icon: "Hello.jpg",
-    file: "https://github.com/maayanboss01-arch/Apks/releases/download/v1.2/Car%20dealer%202026%20car%20for%20sale.apk",
+    file: "https://github.com/maayanboss01-arch/Apks/releases/download/v1.2/773f7b74-211a-46fa-b4e0-b894e47ccad4.apk",
     releaseApi: "https://api.github.com/repos/maayanboss01-arch/Apks/releases/tags/v1.2"
 }
 ];
