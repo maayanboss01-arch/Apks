@@ -16,5 +16,14 @@ const APPS = [
     icon: "8 ball pool.png",
     file: "https://github.com/maayanboss01-arch/Apks/releases/download/v1.1/Cheto-V.1.apk",
     releaseApi: "https://api.github.com/repos/maayanboss01-arch/Apks/releases/tags/v1.1"
-  }
+  },
+    {
+    name: "Car Dealership 2026 Car for Sale",
+    version: "",
+    size: "",
+    description: "Car Dealership Game",
+    icon: "Hello.jpg",
+    file: "https://github.com/maayanboss01-arch/Apks/releases/download/v1.2/Car%20dealer%202026%20car%20for%20sale.apk",
+    releaseApi: "https://api.github.com/repos/maayanboss01-arch/Apks/releases/tags/v1.2"
+}
 ];
