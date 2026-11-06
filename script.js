@@ -55,3 +55,4 @@ async function updateCounter(app,index){
 setInterval(()=>APPS.forEach((a,i)=>updateCounter(a,i)),60000);
 
 function escapeHtml(v){return String(v).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]));}
+renderApps();
