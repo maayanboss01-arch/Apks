@@ -3,7 +3,7 @@ const APPS = [
     name: "Apollon Client",
     version: "6.71",
     size: "441 MB",
-    description: "Minecraft 1.26.60 | 32-bit",
+    description: "Minecraft 1.26.52 | 32-bit",
     icon: "apollon-client.png",
     file: "https://drive.google.com/uc?export=download&id=1XknjMEtAnLfENhuvGWSP71espFJVNGht",
     releaseApi: "https://api.github.com/repos/maayanboss01-arch/Apks/releases/tags/v1.0"
