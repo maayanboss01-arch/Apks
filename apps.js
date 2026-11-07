@@ -5,7 +5,7 @@ const APPS = [
     size: "441 MB",
     description: "Minecraft 1.26.60 | 32-bit",
     icon: "apollon-client.png",
-    file: "https://github.com/maayanboss01-arch/Apks/releases/download/v1.0/iratemc_MCPE_Apollon_Client_1.26.60_v6.71_32Bit.apk",
+    file: "https://drive.google.com/uc?export=download&id=1XknjMEtAnLfENhuvGWSP71espFJVNGht",
     releaseApi: "https://api.github.com/repos/maayanboss01-arch/Apks/releases/tags/v1.0"
   },
   {
